@@ -1,6 +1,7 @@
 import streamlit as st
 
-import UVLevelView, UVImpact
+import UVImpact
+import UVLevelView
 
 
 # https://api.openweathermap.org/data/3.0/onecall?lat=39.099724&lon=-94.578331&exclude=hourly,daily,minutely,alerts&appid=eb91e203d9a036e297d76e0d4e7336b0

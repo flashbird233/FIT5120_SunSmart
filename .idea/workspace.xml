@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2856bdd7-22b6-4401-856a-7983258cef4e" name="更改" comment="Added a Test File">
-      <change afterPath="$PROJECT_DIR$/UVImpact.py" afterDir="false" />
+    <list default="true" id="2856bdd7-22b6-4401-856a-7983258cef4e" name="更改" comment="US1.3 V1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataCollect.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataCollect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UVLevelView.py" beforeDir="false" afterPath="$PROJECT_DIR$/UVLevelView.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +156,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710135900915</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="V1 for UV index page">
+      <option name="closed" value="true" />
+      <created>1710138090238</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710138090238</updated>
+    </task>
+    <task id="LOCAL-00007" summary="US1.3 V1">
+      <option name="closed" value="true" />
+      <created>1710138116003</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710138116003</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,6 +180,8 @@
     <MESSAGE value="Initial" />
     <MESSAGE value="Test for requests" />
     <MESSAGE value="Added a Test File" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a Test File" />
+    <MESSAGE value="V1 for UV index page" />
+    <MESSAGE value="US1.3 V1" />
+    <option name="LAST_COMMIT_MESSAGE" value="US1.3 V1" />
   </component>
 </project>

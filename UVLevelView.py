@@ -17,13 +17,13 @@ def view_uv_level_main():
     # Only show the postcode and suburb input if the return button has not been pressed.
     if not st.session_state.return_pressed:
         postcode = st.text_input("Please input your postcode:")
-        suburb = st.text_input("Please input your suburb")
 
         if st.button("Get UV level"):
-            weather_info = DataCollect.get_weather_cur(postcode, suburb)
+            weather_info = DataCollect.get_weather_cur(postcode)
             uvl = DataCollect.get_uv_level(weather_info)
-            if uvl:
-                st.write(f"The UV index for {suburb} ({postcode}) is: {uvl}")
+            suburb = DataCollect.get_suburb(postcode)
+            if suburb:
+                st.write(f"The UV index for {suburb} is: {uvl}")
                 st.title("Suggestions")
                 sug = DataCollect.get_spf_sug(uvl)
                 st.write(sug)

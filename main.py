@@ -11,6 +11,7 @@ def set_page_status(page_name):
 
 def show_main_page():
     # Show the main page
+    st.set_page_config(layout="wide")
     st.header('Welcome to the sun protection page')
     if st.button('UV Level Locations', key='uv_level_locations_btn'):
         set_page_status('view_uv_level_locations')

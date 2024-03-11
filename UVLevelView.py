@@ -20,12 +20,22 @@ def view_uv_level_main():
 
         if st.button("Get UV level"):
             weather_info = DataCollect.get_weather_cur(postcode)
-            uvl = DataCollect.get_uv_level(weather_info)
+            # uvl = DataCollect.get_uv_level(weather_info)
+            uvl=10
             suburb = DataCollect.get_suburb(postcode)
             if suburb:
                 st.write(f"The UV index for {suburb} is: {uvl}")
-                st.title("Suggestions")
-                sug = DataCollect.get_spf_sug(uvl)
+                st.header("Suggestions")
+                sug, cloth_sug, suns_sug = DataCollect.get_spf_sug(uvl)
                 st.write(sug)
+                if cloth_sug:
+                    # Split to columns
+                    col1, col2 = st.columns(2)
+                    with col1:
+                        st.header("Clothing Required:")
+                        st.write(cloth_sug)
+                    with col2:
+                        st.header("Sunscreen Required:")
+                        st.write(suns_sug)
             else:
                 st.error("No location found for the given postcode and suburb.")

@@ -44,20 +44,20 @@ def get_uv_level(weather_info):
 # https://www.epa.gov/sunsafety/uv-index-scale-0
 def get_spf_sug(uv_level):
     if uv_level < 2:
-        return "No protection needed. You can safely stay outside using minimal sun protection."
+        sug = "No protection needed. You can safely stay outside using minimal sun protection."
+        cloth_sug = None
+        suns_sug = None
+        return sug, cloth_sug, suns_sug
     elif uv_level <= 7:
-        return ("""
-        Protection needed. Seek shade during late morning through mid-afternoon. 
-        When outside, generously apply broad-spectrum SPF-15 or higher sunscreen on exposed skin, 
-        and wear protective clothing, a wide-brimmed hat, and sunglasses.
-        """)
+        sug = "Protection needed. Seek shade during late morning through mid-afternoon."
+        cloth_sug = "Wear protective clothing, a wide-brimmed hat, and sunglasses."
+        suns_sug = "When outside, Generously apply broad-spectrum SPF-15 or higher sunscreen on exposed skin."
+        return sug, cloth_sug, suns_sug
     else:
-        return ("""
-        Extra protection needed. Be careful outside, especially during late morning through 
-        mid-afternoon. If your shadow is shorter than you, seek shade and wear protective clothing, 
-        a wide-brimmed hat, and sunglasses, and generously apply a minimum of  SPF-15, 
-        broad-spectrum sunscreen on exposed skin.
-        """)
+        sug = "Extra protection needed. Be careful outside, especially during late morning through mid-afternoon."
+        cloth_sug = "Wear protective clothing, a wide-brimmed hat, and sunglasses."
+        suns_sug = "Generously apply a minimum of SPF-15, broad-spectrum sunscreen on exposed skin."
+        return sug, cloth_sug, suns_sug
 
 
 if __name__ == "__main__":

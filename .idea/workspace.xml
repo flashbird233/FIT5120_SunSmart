@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2856bdd7-22b6-4401-856a-7983258cef4e" name="更改" comment="US1.3 V1">
+    <list default="true" id="2856bdd7-22b6-4401-856a-7983258cef4e" name="更改" comment="Delete the suburb input in uv level page">
+      <change afterPath="$PROJECT_DIR$/UVLevelView.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataCollect.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataCollect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UVImpact.py" beforeDir="false" afterPath="$PROJECT_DIR$/UVImpact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UVLevelView.py" beforeDir="false" afterPath="$PROJECT_DIR$/UVLevelView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710140724794</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Delete the suburb input in uv level page">
+      <option name="closed" value="true" />
+      <created>1710151800432</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710151800432</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +236,7 @@
     <MESSAGE value="Added a Test File" />
     <MESSAGE value="V1 for UV index page" />
     <MESSAGE value="US1.3 V1" />
-    <option name="LAST_COMMIT_MESSAGE" value="US1.3 V1" />
+    <MESSAGE value="Delete the suburb input in uv level page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete the suburb input in uv level page" />
   </component>
 </project>

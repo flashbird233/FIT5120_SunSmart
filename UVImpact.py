@@ -3,8 +3,6 @@ import streamlit as st
 
 # This is the main app function.
 def show_uv_impact():
-    # Sets the page configuration to wide by default
-    st.set_page_config(layout="wide")
     # Title of the app
     st.title('About UV Radiation')
     # Using columns to show the text, the image, and an empty column to push content to the left

@@ -1,34 +1,35 @@
 import streamlit as st
 
-import UVImpact
-import UVLevelView
+import view_uv_level_locations, uv_data_impacts, sunscreen_set
+
+# st.set_page_config(layout="wide")
+def home_page():
+    uv_data_impacts.show_data_main()
 
 
-# https://api.openweathermap.org/data/3.0/onecall?lat=39.099724&lon=-94.578331&exclude=hourly,daily,minutely,alerts&appid=eb91e203d9a036e297d76e0d4e7336b0
-def set_page_status(page_name):
-    st.session_state.current_page = page_name
+def page2():
+    st.write('This is the sunscreen set page')
+    sunscreen_set.sunscreen_set_main()
 
 
-def show_main_page():
-    # Show the main page
-    st.set_page_config(layout="wide")
-    st.header('Welcome to the sun protection page')
-    if st.button('UV Level Locations', key='uv_level_locations_btn'):
-        set_page_status('view_uv_level_locations')
-    elif st.button('Data about UV impacts', key='uv_data_impacts'):
-        set_page_status('uv_data_impacts')
+def page3():
+    view_uv_level_locations.view_uv_level_main()
 
 
+# The main function
 def main():
-    if 'current_page' not in st.session_state:
-        st.session_state['current_page'] = 'home'
+    # Simple navigation using the sidebar
+    st.set_page_config(layout="wide")
+    st.sidebar.title('Navigation')
+    choice = st.sidebar.radio('Which page to go to?', ('home page', 'sunscreen_set', 'uv level'))
 
-    if st.session_state.current_page == 'home':
-        show_main_page()
-    elif st.session_state.current_page == 'view_uv_level_locations':
-        UVLevelView.view_uv_level_main()
-    elif st.session_state.current_page == 'uv_data_impacts':
-        UVImpact.show_uv_impact()
+    # Main logic
+    if choice == 'home page':
+        home_page()
+    elif choice == 'sunscreen_set':
+        page2()
+    elif choice == 'uv level':
+        page3()
 
 
 main()

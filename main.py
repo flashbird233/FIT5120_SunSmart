@@ -15,4 +15,3 @@ req_url = main_url + "lat=" + str(lat) + "&lon=" + str(lon) + "&appid=" + key
 # Get the UV level
 response = requests.get(req_url)
 st.write(response.json())
-

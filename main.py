@@ -1,6 +1,10 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
 
-import view_uv_level_locations, uv_data_impacts, sunscreen_set
+import sunscreen_set
+import uv_data_impacts
+import view_uv_level_locations
+
 
 # st.set_page_config(layout="wide")
 def home_page():
@@ -20,15 +24,16 @@ def page3():
 def main():
     # Simple navigation using the sidebar
     st.set_page_config(layout="wide")
-    st.sidebar.title('Navigation')
-    choice = st.sidebar.radio('Which page to go to?', ('home page', 'sunscreen_set', 'uv level'))
+    selected = option_menu(None,
+                           ["Home", "Sunscreen Set", "UV Level"],
+                           orientation="horizontal")
 
     # Main logic
-    if choice == 'home page':
+    if selected == 'Home':
         home_page()
-    elif choice == 'sunscreen_set':
+    elif selected == 'Sunscreen Set':
         page2()
-    elif choice == 'uv level':
+    elif selected == 'UV Level':
         page3()
 
 

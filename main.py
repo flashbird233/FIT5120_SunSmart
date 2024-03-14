@@ -6,18 +6,38 @@ import uv_data_impacts
 import view_uv_level_locations
 
 
-# st.set_page_config(layout="wide")
-def home_page():
-    uv_data_impacts.show_data_main()
+# Define a function to show the page footer
+def show_footer():
+    st.markdown("""
+    ---
+    """)
+    col1, col2 = st.columns([2, 4])
+    with col1:
+        st.markdown("""
+        ##### About us
+        """)
+    with col2:
+        show_more_links()
 
 
-def page2():
-    st.write('This is the sunscreen set page')
-    sunscreen_set.sunscreen_set_main()
-
-
-def page3():
-    view_uv_level_locations.view_uv_level_main()
+# Define a function to show more information links in the footer
+def show_more_links():
+    st.markdown("""
+    ##### Learn More:
+    """)
+    col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        st.write("[UV Radiation](https://en.wikipedia.org/wiki/Ultraviolet)")
+        st.write("[Eye Damage by UV Light](https://www.aoa.org/patients-and-public/caring-for-your-vision"
+                 "/uv-protection)")
+    with col2:
+        st.write("[Skin Cancer](https://www.cancer.org.au/cancer-information/types-of-cancer/skin-cancer)")
+        st.write("[Sunburn](https://www.mayoclinic.org/diseases-conditions/sunburn/symptoms-causes/syc-20355922)")
+    with col3:
+        st.write("[Sunscreen](https://en.wikipedia.org/wiki/Sunscreen)")
+        st.write("[Premature Aging of the Skin](https://dermnetnz.org/topics/ageing-skin)")
+    with col4:
+        st.write("[Sun Protection](https://dermnetnz.org/topics/sunburn)")
 
 
 # The main function
@@ -30,11 +50,13 @@ def main():
 
     # Main logic
     if selected == 'Home':
-        home_page()
+        uv_data_impacts.show_data_main()
     elif selected == 'Sunscreen Set':
-        page2()
+        sunscreen_set.sunscreen_set_main()
     elif selected == 'UV Check':
-        page3()
+        view_uv_level_locations.view_uv_level_main()
+
+    show_footer()
 
 
 main()

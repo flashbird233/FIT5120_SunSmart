@@ -19,6 +19,7 @@ def calculate_next_application_time(uv_index, application_time, location):
 
 # User interface display function
 def sunscreen_set_main():
+    st.write('This is the sunscreen set page')
     st.write("Sun protection reminder")
     uv_index = st.number_input('please input the uv level：', min_value=0.0, value=11.0, step=0.1)
 

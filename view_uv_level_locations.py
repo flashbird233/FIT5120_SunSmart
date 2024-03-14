@@ -4,7 +4,7 @@ import DataCollect
 
 
 def view_uv_level_main():
-    st.image("pic/sunshine.jpg")
+    st.image("./pic/sunshine.jpg")
     st.title("View UV Index")
 
     postcode = st.text_input("Please input your postcode:")
@@ -30,4 +30,4 @@ def view_uv_level_main():
                     st.write(suns_sug)
         else:
             st.error("No location found for the given postcode and suburb.")
-    st.image("pic/UVL_prot.jpg")
+    st.image("./pic/UVL_prot.jpg")

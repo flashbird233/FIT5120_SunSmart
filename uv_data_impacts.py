@@ -36,23 +36,13 @@ def show_data_main():
         st.write("Apply sunscreen with at least SPF 15, guarding against both UVA and UVB rays.")
         st.write("Steer clear of indoor tanning.")
 
-    st.image("pic/five_way_prot.png")
+    st.image("./pic/five_way_prot.png")
     # Third column for image
 
     with col3:
-
-        st.image("pic/SunImpact.png")
+        st.image("./pic/SunImpact.png")
         st.header('Health Risks Related with UV Radiation')
         st.write("Skin Cancer")
         st.write("Sunburn (Erythema)")
         st.write("Premature Aging of the Skin")
         st.write("Eye Damage")
-
-
-
-
-
-
-
-
-

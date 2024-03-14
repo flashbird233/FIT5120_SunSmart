@@ -3,20 +3,29 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 # 创建菜单栏
+
+st.set_page_config(
+    page_title="Ex-stream-ly Cool App",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        'Report a bug': "https://www.extremelycoolapp.com/bug",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    }
+)
 selected = option_menu(None,
                        ["Home", "Sunscreen Set", "UV Level"],
                        orientation="horizontal")
 
 
 def show_data_main():
-    # Title of the app
-    st.title('About UV Radiation')
-    # Using columns to lay out the text, the image, and an empty column to push content to the left
     # Allocate more space to the image column by adjusting the ratio in the columns list
     col1, col2, col3 = st.columns([1, 1, 1])  # Adjust the middle number to give more space to the image
 
     # First column for text
-    with [col1, col2]:
+    with col1:
         st.header('What is UV Radiation?')
         st.write("""
         UV (ultraviolet) radiation is a type of light from the sun that can be harmful to our skin. 

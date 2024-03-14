@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2856bdd7-22b6-4401-856a-7983258cef4e" name="更改" comment="Trying to fix the image bug">
-      <change beforePath="$PROJECT_DIR$/uv_data_impacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/uv_data_impacts.py" afterDir="false" />
+    <list default="true" id="2856bdd7-22b6-4401-856a-7983258cef4e" name="更改" comment="Added footer">
+      <change afterPath="$PROJECT_DIR$/pic/SACA_logo2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/SACA_logo2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pic/five_way_prot.png" beforeDir="false" afterPath="$PROJECT_DIR$/pic/five_way_prot.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710389026588</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added footer">
+      <option name="closed" value="true" />
+      <created>1710391741013</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1710391741013</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,6 +331,7 @@
     <MESSAGE value="Change the page structure" />
     <MESSAGE value="Changed the page order and file structure" />
     <MESSAGE value="Trying to fix the image bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix the image bug" />
+    <MESSAGE value="Added footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added footer" />
   </component>
 </project>

@@ -37,7 +37,7 @@ def show_more_links():
         st.write("[Sunscreen](https://en.wikipedia.org/wiki/Sunscreen)")
         st.write("[Premature Aging of the Skin](https://dermnetnz.org/topics/ageing-skin)")
     with col4:
-        st.write("[Sun Protection](https://dermnetnz.org/topics/sunburn)")
+        st.write("[Sun Protection](https://www.cancer.org.au/save-your-skin/five-sunsmart-steps)")
 
 
 # The main function

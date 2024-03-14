@@ -33,7 +33,7 @@ def show_about_us():
     col1, col2 = st.columns([0.1, 0.9])
     with col1:
         st.image("./pic/SACA_logo2.jpg",
-                 width=50)
+                 width=35)
     with col2:
         st.markdown("""
                     ##### About us:

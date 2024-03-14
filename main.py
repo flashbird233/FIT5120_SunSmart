@@ -25,7 +25,7 @@ def main():
     # Simple navigation using the sidebar
     st.set_page_config(layout="wide")
     selected = option_menu(None,
-                           ["Home", "Sunscreen Set", "UV Level"],
+                           ["Home", "---", "UV Check", "---", "Sunscreen Set"],
                            orientation="horizontal")
 
     # Main logic
@@ -33,7 +33,7 @@ def main():
         home_page()
     elif selected == 'Sunscreen Set':
         page2()
-    elif selected == 'UV Level':
+    elif selected == 'UV Check':
         page3()
 
 

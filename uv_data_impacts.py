@@ -5,20 +5,25 @@ import streamlit as st
 def show_data_main():
     # Title of the app
     st.title('About UV Radiation')
-    # Using columns to layout the text, the image, and an empty column to push content to the left
+    # Using columns to lay out the text, the image, and an empty column to push content to the left
     # Allocate more space to the image column by adjusting the ratio in the columns list
-    col1, col2, col3 = st.columns([1,1,1])  # Adjust the middle number to give more space to the image
+    col1, col2, col3 = st.columns([1, 1, 1])  # Adjust the middle number to give more space to the image
 
     # First column for text
     with col1:
         st.header('What is UV Radiation?')
         st.write("""
-        UV (ultraviolet) radiation is a type of light from the sun that can be harmful to our skin. It's really strong in Australia, making skin cancer much more common there. UV radiation is bad because it can damage the skin and lead to serious types of skin cancer, including melanoma, which is very dangerous, as well as other kinds like basal cell and squamous cell carcinoma.
+        UV (ultraviolet) radiation is a type of light from the sun that can be harmful to our skin. 
+        It's really strong in Australia, making skin cancer much more common there. UV radiation is bad 
+        because it can damage the skin and lead to serious types of skin cancer, including melanoma, 
+        which is very dangerous, as well as other kinds like basal cell and squamous cell carcinoma.
 
-        Because of the strong UV radiation in Australia, a lot of people get skin cancer, especially if they get too much sun when they are young. This has made Australians more careful about protecting themselves from the sun. They are using sunscreen more, wearing hats, and covering up their skin to reduce the risk of getting cancer from UV radiation. Staying safe from the sun's harmful rays is really important to keep skin healthy.
+        Because of the strong UV radiation in Australia, a lot of people get skin cancer, especially 
+        if they get too much sun when they are young. This has made Australians more careful about 
+        protecting themselves from the sun. They are using sunscreen more, wearing hats, and 
+        covering up their skin to reduce the risk of getting cancer from UV radiation. 
+        Staying safe from the sun's harmful rays is really important to keep skin healthy.
         """)
-
-        # st.image("./picc.jpg")
 
     # Second column for text
     with col2:
@@ -31,12 +36,12 @@ def show_data_main():
         st.write("Apply sunscreen with at least SPF 15, guarding against both UVA and UVB rays.")
         st.write("Steer clear of indoor tanning.")
 
-    st.image("./piccc.png")
+    st.image("pic/five_way_prot.png")
     # Third column for image
 
     with col3:
 
-        st.image("./SunImpact.png")
+        st.image("pic/SunImpact.png")
         st.header('Health Risks Related with UV Radiation')
         st.write("Skin Cancer")
         st.write("Sunburn (Erythema)")

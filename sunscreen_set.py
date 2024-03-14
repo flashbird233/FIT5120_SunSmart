@@ -32,7 +32,6 @@ def sunscreen_set_main():
     # Create a datetime.time object
     application_time_input = time(hour=hour, minute=minute)
 
-
     st.write('You selected:', application_time_input)
     location = st.selectbox('choose your location：', ['Indoor', 'Outdoor', 'swimming pool'])
     application_time = datetime.combine(datetime.today(), application_time_input)
@@ -45,5 +44,3 @@ def sunscreen_set_main():
     current_time = datetime.now().time()
     if current_time >= application_time_input:
         st.write("It's time to reapply sunscreen")
-
-

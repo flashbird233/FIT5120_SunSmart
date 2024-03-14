@@ -57,10 +57,6 @@ def show_data_main():
                 Applying sunscreen is also a crucial step in sun protection. Choose a sunscreen with an SPF of 
                 at least 15 that guards against both UVA and UVB rays. Apply it half an hour before going outdoors 
                 and reapply regularly to maintain its effectiveness.
-                
-                Lastly, it's important to steer clear of indoor tanning. Indoor tanning equipment often emits UV 
-                light more intense than natural sunlight, which can cause severe damage to the skin over time and 
-                even increase the risk of developing skin cancer. Therefore, cherish your skin and avoid indoor tanning.
                 """)
 
     with col2:

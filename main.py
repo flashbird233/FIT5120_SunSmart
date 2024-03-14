@@ -71,11 +71,12 @@ def main():
     # Simple navigation using the sidebar
     st.set_page_config(layout="wide",
                        page_title="Sun Smart",
-                       menu_items=None,)
+                       menu_items=None)
     show_header()
     selected = option_menu(None,
                            ["Home", "---", "UV Check", "---", "Sunscreen Set"],
-                           orientation="horizontal")
+                           orientation="horizontal",
+                           icons=["house", None, "search", None, "alarm-fill"])
 
     # Main logic
     if selected == 'Home':

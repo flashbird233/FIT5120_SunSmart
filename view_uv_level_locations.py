@@ -7,14 +7,13 @@ def view_uv_level_main():
     st.image("./pic/sunshine.jpg")
     st.title("View UV Index")
 
-    postcode = st.text_input("Please input your postcode:")
+    post_sub = st.text_input("Please input your postcode:")
 
     if st.button("Get UV level"):
-        weather_info = DataCollect.get_weather_cur(postcode)
-        uvl = DataCollect.get_uv_level(weather_info)
-        # uvl=10
-        suburb = DataCollect.get_suburb(postcode)
+        suburb = DataCollect.get_suburb(post_sub)
         if suburb:
+            weather_info = DataCollect.get_weather_cur(post_sub)
+            uvl = DataCollect.get_uv_level(weather_info)
             st.write(f"The UV index for {suburb} is: {uvl}")
             st.header("Suggestions")
             sug, cloth_sug, suns_sug = DataCollect.get_spf_sug(uvl)

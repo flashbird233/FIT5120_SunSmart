@@ -2,30 +2,42 @@ import pandas as pd
 import requests
 
 
+# Define a function to remove blank spaces and convert the string to lower case
+def clean_str(str_in):
+    str_in = str(str_in)
+    str_in = str_in.replace(" ", "")
+    return str_in.strip().lower()
+
+
 # Define a function to read the location csv file
 # And check the location is in our database or not
-def check_loc(postcode):
+def check_loc(post_sub):
     # Read the location csv file
     df = pd.read_csv("location.csv")
+    post_sub = clean_str(post_sub)
+    # clean the suburb
+    df["suburb"] = [clean_str(x) for x in df["suburb"]]
     # Check the location is in our database or not
-    result = df[df["postcode"] == int(postcode)]
-    return result
+    try:
+        postcode = int(post_sub)
+        return df[df["postcode"] == postcode]
+    except ValueError:
+        return df[df["suburb"] == post_sub]
 
 
-def get_suburb(postcode):
-    df = check_loc(postcode)
-    if len(df) == 0:
-        return "No location found for the given postcode."
+def get_suburb(post_sub):
+    df = check_loc(post_sub)
+    if len(df) < 1:
+        return False
     else:
         return df["suburb"].values[0]
 
 
-def get_weather_cur(postcode):
+def get_weather_cur(post_sub):
     # Get the latitude and longitude based on the postcode and suburb information in the database table
-    loc_result = check_loc(postcode)
+    loc_result = check_loc(post_sub)
     lat = loc_result["latitude"].values[0]
     lon = loc_result["longitude"].values[0]
-    print(lat, lon)
     key = "d32542473437f300dfdec104552b7f65"
     main_url = "https://api.openweathermap.org/data/3.0/onecall?"
     req_url = main_url + "lat=" + str(lat) + "&lon=" + str(lon) + "&appid=" + key
@@ -61,7 +73,6 @@ def get_spf_sug(uv_level):
 
 
 if __name__ == "__main__":
-    wea = get_weather_cur(810)
-    print(wea)
-    print(get_uv_level(wea))
+    test = check_loc("mel")
+    print(len(test))
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2856bdd7-22b6-4401-856a-7983258cef4e" name="更改" comment="Updated the uv level checking method, both suburb and postcode inputs are available now.">
+    <list default="true" id="2856bdd7-22b6-4401-856a-7983258cef4e" name="更改" comment="Updated the sunscreen reminder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
@@ -331,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710464666159</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Updated the sunscreen reminder">
+      <option name="closed" value="true" />
+      <created>1710464766928</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1710464766928</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -388,6 +396,7 @@
     <MESSAGE value="Trying to fix the theme bug" />
     <MESSAGE value="Changed the logo size in about us" />
     <MESSAGE value="Updated the uv level checking method, both suburb and postcode inputs are available now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the uv level checking method, both suburb and postcode inputs are available now." />
+    <MESSAGE value="Updated the sunscreen reminder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the sunscreen reminder" />
   </component>
 </project>

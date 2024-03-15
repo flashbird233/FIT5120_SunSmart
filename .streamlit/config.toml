@@ -1,14 +1,2 @@
 [theme]
 base="light"
-
-[server]
-# Turn off (set to false) the development menu with the "Rerun" and "Edit" options.
-enableCORS = false
-headless = true
-
-[browser]
-# Gather usage statistics.
-gatherUsageStats = false
-
-# Disable the hamburger menu in the top-right corner of the app.
-showMainMenu = false

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2856bdd7-22b6-4401-856a-7983258cef4e" name="更改" comment="Changed the server config">
+    <list default="true" id="2856bdd7-22b6-4401-856a-7983258cef4e" name="更改" comment="Changed a reminder word type.">
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sunscreen_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/sunscreen_set.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710466827750</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Changed a reminder word type.">
+      <option name="closed" value="true" />
+      <created>1710468816994</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1710468816994</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -423,6 +430,7 @@
     <MESSAGE value="Updated the uv level checking method, both suburb and postcode inputs are available now." />
     <MESSAGE value="Updated the sunscreen reminder" />
     <MESSAGE value="Changed the server config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the server config" />
+    <MESSAGE value="Changed a reminder word type." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed a reminder word type." />
   </component>
 </project>

@@ -83,15 +83,15 @@ def add_background():
 # The main sunscreen reminder set up.
 def sunscreen_set():
     st.text(" ")  # Add a space for formatting purposes
-    colored_text = ('<p style="color: #FFD700; font-weight: bold;">Please choose the time when you first '
-                    'apply sunscreen:</p>')
+    colored_text = '<p style="color: #FFD700; font-weight: bold;">Please choose the time when you first apply sunscreen:</p>'
 
     st.markdown(colored_text, unsafe_allow_html=True)
 
     # Input for the time of first sunscreen application without a label
     application_time_input = st.time_input('', value=time(10, 0))
 
-    st.write('Application time selected:', application_time_input)
+    # st.write('Application time selected:', application_time_input)
+    st.markdown('**Application time selected:** ' + str(application_time_input))
 
     # Let the user choose their location
     location = st.selectbox('Choose your location:', ['Indoor', 'Outdoor', 'Swimming pool'])
@@ -109,32 +109,10 @@ def sunscreen_set():
         if datetime.now() >= next_application_time:
             st.info("It's time to reapply sunscreen")
         else:
-            # Show the countdown to the next sunscreen application
-            time_to_next_application = next_application_time - datetime.now()
-            time_to_reapply_text = (f"Time until you need to reapply sunscreen: <span style='color: #FFD700; "
-                                    f"font-weight: bold; animation: blinker 1s linear infinite;'>"
-                                    f"{time_to_next_application}</span>")
-            st.markdown(f"{time_to_reapply_text}", unsafe_allow_html=True)
-            # Add blinking animation for the countdown
-            st.markdown(
-                """
-                <style>
-                @keyframes blinker {
-                  50% { opacity: 0; }
-                }
-                .blinking {
-                  animation: blinker 1s linear infinite;
-                  color: white;
-                }
-                </style>
-                """,
-                unsafe_allow_html=True
-            )
+            st.info("You don't need to reapply sunscreen just yet.")
     else:
         # No need to apply sunscreen right now
         st.write("No need to reapply sunscreen at the moment. You're all set for now!")
-
-
 # Main function to set up the Streamlit app layout.
 def sunscreen_set_main():
     st.title('Sunscreen Reapplication Reminder')

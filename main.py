@@ -8,7 +8,7 @@ import view_uv_level_locations
 
 # Define a function to show the page header
 def show_header():
-    col1, col2, col3, col4 = st.columns([0.3, 0.1, 0.3, 0.3])
+    col1, col2, col3, col4 = st.columns([0.4, 0.05, 0.25, 0.3])
     with col2:
         st.image("./pic/SACA_logo2.jpg",
                  use_column_width=True)
@@ -74,14 +74,14 @@ def main():
                        menu_items=None)
     show_header()
     selected = option_menu(None,
-                           ["Home", "---", "UV Check", "---", "Sunscreen Set"],
+                           ["Home", "---", "UV Check", "---", "Reminder"],
                            orientation="horizontal",
                            icons=["house", None, "search", None, "alarm-fill"])
 
     # Main logic
     if selected == 'Home':
         uv_data_impacts.show_data_main()
-    elif selected == 'Sunscreen Set':
+    elif selected == 'Reminder':
         sunscreen_set.sunscreen_set_main()
     elif selected == 'UV Check':
         view_uv_level_locations.view_uv_level_main()

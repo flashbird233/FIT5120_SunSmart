@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2856bdd7-22b6-4401-856a-7983258cef4e" name="更改" comment="Changed the logo size in about us">
+    <list default="true" id="2856bdd7-22b6-4401-856a-7983258cef4e" name="更改" comment="Updated the uv level checking method, both suburb and postcode inputs are available now.">
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataCollect.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataCollect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view_uv_level_locations.py" beforeDir="false" afterPath="$PROJECT_DIR$/view_uv_level_locations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sunscreen_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/sunscreen_set.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Monash/current/FIT5120/Onboarding/FIT5120SunSmart/pic",
+    "last_opened_file_path": "C:/Monash/current/FIT5120/Onboarding/FIT5120SunSmart",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -57,7 +58,7 @@
       <recent name="C:\Monash\current\FIT5120\Onboarding\FIT5120SunSmart\pic" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="DataCollect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FIT5120SunSmart" />
       <option name="ENV_FILES" value="" />
@@ -316,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710402364189</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Updated the uv level checking method, both suburb and postcode inputs are available now.">
+      <option name="closed" value="true" />
+      <created>1710404918054</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1710404918054</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -372,6 +381,7 @@
     <MESSAGE value="Updated navigation bar" />
     <MESSAGE value="Trying to fix the theme bug" />
     <MESSAGE value="Changed the logo size in about us" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the logo size in about us" />
+    <MESSAGE value="Updated the uv level checking method, both suburb and postcode inputs are available now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the uv level checking method, both suburb and postcode inputs are available now." />
   </component>
 </project>

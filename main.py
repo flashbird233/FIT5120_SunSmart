@@ -13,7 +13,9 @@ def show_header():
         st.image("./pic/SACA_logo2.jpg",
                  use_column_width=True)
     with col3:
-        st.markdown("# Sun Smart")
+        st.markdown("""
+        # Sun Smart
+        """)
 
 
 # Define a function to show the page footer

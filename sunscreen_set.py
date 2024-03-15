@@ -111,7 +111,7 @@ def sunscreen_set():
         else:
             # Show the countdown to the next sunscreen application
             time_to_next_application = next_application_time - datetime.now()
-            time_to_reapply_text = (f"Time until you need to reapply sunscreen: <span style='color: #FFFFFF; "
+            time_to_reapply_text = (f"Time until you need to reapply sunscreen: <span style='color: #FFD700; "
                                     f"font-weight: bold; animation: blinker 1s linear infinite;'>"
                                     f"{time_to_next_application}</span>")
             st.markdown(f"{time_to_reapply_text}", unsafe_allow_html=True)
